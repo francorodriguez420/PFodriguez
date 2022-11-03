@@ -195,6 +195,7 @@ h1 {
 .titulo__seccion {
     letter-spacing: 15px;
     margin-bottom: 50px;
+    text-decoration: underline;
 }
 .title {
     margin-top: 30px;
