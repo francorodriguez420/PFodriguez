@@ -1,0 +1,21 @@
+footer {
+    background-color: #031500;
+    width: 100%;
+    text-align: center;
+    height: 45px;
+    margin-top: auto;
+    bottom: 0;
+    position: absolute;
+
+    p {
+        padding-top: 12px; 
+    }
+}
+@media only screen and (max-width: 800px) {
+    footer p {
+        font-size: 12px;
+    }
+    .titulo__seccion {
+        font-size: large;
+    }
+}
