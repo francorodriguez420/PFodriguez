@@ -1,0 +1,70 @@
+@import "utilities/variables";
+
+.navbar-1 {
+    background-color: #015c0d;
+    z-index: 999;
+}
+.nav-link {
+    color: white;
+}
+ul {
+    list-style: none;
+    li {
+        float: right;
+        a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+            transition: color 0.2s;
+            &:hover {
+                color: $negro;
+            }
+        }
+    }
+}
+.home2 {
+    top: 15px;
+    left: 40px;
+    max-height: 40px;
+    max-width: 100px;
+    position: absolute;
+}
+.home {
+    top: 15px;
+    left: 40px;
+    max-height: 40px;
+    max-width: 100px;
+    position: absolute;
+    transition: opacity 0.2s;
+    &:hover {
+        opacity: 0;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .menu__navegacion {
+        text-align: center;
+        font-size: 12px;
+        justify-content: center;
+    }
+    nav {
+        height: 100px;
+    }
+    ul li {
+        text-align: center;
+        display:inline-block;
+        float: none;
+        a {
+            padding-top: 60px;
+        }
+    }
+}
+@media only screen and (max-width: 500px) {
+    .menu__navegacion {
+        font-size: 9px;
+    }
+    li a {
+        padding-left: 8px;
+    }
+}

@@ -10,45 +10,55 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
     <title>Discos</title>
     <link rel="shortcut icon" href="../assets/favicon.png">
-    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../css/main.css">
     <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
 </head>
 <body>
-    <nav>
+    <nav class="navbar navbar-light navbar-1 green">
         <a href="../index.html"><img src="../assets/logosnoopng.png" alt="Snoop Dogg Logo Negro" class="home2"/></a>
         <a href="../index.html"><img src="../assets/logosnoopbl.png" alt="Snoop Dogg Logo Blanco" class="home"/></a>
-            <ul class="menu__navegacion">
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <li><a href="galeria.html">GALERIA</a></li>
-                <li><a href="discos.html" class="active">DISCOS</a></li>
-                <li><a href="biografia.html">BIOGRAFIA</a></li>
-            </ul>
-    </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+          aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+    
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="biografia.html">Biografía <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="discos.html">Discos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
     <h1 class="title">DISCOS</h1>
-    <section>
-        <article class="article__discos">
+    <div class="discos">
+        <div class="article__discos">
             <img src="../assets/discos/snoopdogg-album1.jpg" alt="Snoop Album 1" class="album__cover">
-            <p class="parrafo__album">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eligendi. Voluptatum, impedit ipsum consequuntur explicabo unde saepe vero voluptatibus ducimus sit ut dolorem rem, tempora dolorum doloribus quia, laboriosam quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi doloribus quo blanditiis nemo, eius deserunt esse dicta dignissimos a sint distinctio possimus? Tempore commodi, impedit voluptate fugiat vitae ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci a repudiandae sapiente ipsa ad libero ratione, dolorem labore, facere beatae culpa? Mollitia tempora obcaecati doloremque eos facere perspiciatis aliquam?</p>
-            <button class="play__disco"><span>PLAY </span></button>
-        </article>
-        <article class="article__discos">
-            <img src="../assets/discos/snoopdogg-album2.jpg" alt="Snoop Album 2" class="album__cover">
-            <p class="parrafo__album">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eligendi. Voluptatum, impedit ipsum consequuntur explicabo unde saepe vero voluptatibus ducimus sit ut dolorem rem, tempora dolorum doloribus quia, laboriosam quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi doloribus quo blanditiis nemo, eius deserunt esse dicta dignissimos a sint distinctio possimus? Tempore commodi, impedit voluptate fugiat vitae ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci a repudiandae sapiente ipsa ad libero ratione, dolorem labore, facere beatae culpa? Mollitia tempora obcaecati doloremque eos facere perspiciatis aliquam?</p>
-            <button class="play__disco"><span>PLAY </span></button>
-        </article>
-        <article class="article__discos">
+            <p class="parrafo__album">Doggystyle es el álbum debut del rapero Snoop Doggy Dogg, lanzado el 23 de noviembre de 1993, a través de Death Row Records. Fue producido por Dr. Dre. Se convirtió en el primer álbum de la West Coast en debutar en primer puesto en las listas, promoviendo además el G-Funk de la Costa Oeste. Los sencillos "Who Am I (What's My Name)?" y "Gin and Juice" alcanzaron el top ten en las listas de Estados Unidos y el álbum se mantuvo en las listas de Billboard durante varios meses.</p>
+            <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/album/57elsC8jWIydd3qGLf5w8C?utm_source=generator" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="article__discos">
             <img src="../assets/discos/snoopdogg-album3.jpg" alt="Snoop Album 3" class="album__cover">
-            <p class="parrafo__album">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eligendi. Voluptatum, impedit ipsum consequuntur explicabo unde saepe vero voluptatibus ducimus sit ut dolorem rem, tempora dolorum doloribus quia, laboriosam quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi doloribus quo blanditiis nemo, eius deserunt esse dicta dignissimos a sint distinctio possimus? Tempore commodi, impedit voluptate fugiat vitae ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci a repudiandae sapiente ipsa ad libero ratione, dolorem labore, facere beatae culpa? Mollitia tempora obcaecati doloremque eos facere perspiciatis aliquam?</p>
-            <button class="play__disco"><span>PLAY </span></button>
-        </article>
-        <article class="article__discos">
+            <p class="parrafo__album">R&G (Rhythm & Gangsta): The Masterpiece es el septimo album de estudio del rapero Snoop Dogg. Fue lanzado el 16 de Noviembre del 2004, por Doggystyle Records. El album debutó en el puesto 6 del US Billboard 200, vendiendo 225,000 copias en su primer semana.</p>
+            <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/album/797fkvAtk0iZvP1HHPCWbp?utm_source=generator" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="article__discos">
             <img src="../assets/discos/snoopdogg-album4.jpg" alt="Snoop Album 4" class="album__cover">
-            <p class="parrafo__album">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eligendi. Voluptatum, impedit ipsum consequuntur explicabo unde saepe vero voluptatibus ducimus sit ut dolorem rem, tempora dolorum doloribus quia, laboriosam quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi doloribus quo blanditiis nemo, eius deserunt esse dicta dignissimos a sint distinctio possimus? Tempore commodi, impedit voluptate fugiat vitae ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci a repudiandae sapiente ipsa ad libero ratione, dolorem labore, facere beatae culpa? Mollitia tempora obcaecati doloremque eos facere perspiciatis aliquam?</p>
-            <button class="play__disco"><span>PLAY </span></button>
-        </article>
-    </section>
-    <div>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5EyEI8tm60S6y2YKbjE0xI?utm_source=generator&theme=0" width="70%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <p class="parrafo__album">Tha Blue Carpet Treatment es el octavo album de estuio creado por Snoop Dogg. Fue lanzado el 21 de Noviembre del 2006, por Doggystyle Records y Geffen Records. También es el ultimo album en incluir una colaboración con el rapero Nate Dogg antes de su muerte. El album debuto en el puesto 5 del US Billboard 200, vendiendo 264,000 copias en su primer semana.</p>
+            <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/album/5EyEI8tm60S6y2YKbjE0xI?utm_source=generator" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="article__discos">
+          <img src="../assets/discos/snoopdogg-album5.jpg" alt="Snoop Album 2" class="album__cover">
+          <p class="parrafo__album">BODR (en abreviación para Bacc On Death Row) es el decimonoveno album de estudio del rapero Snoop Dogg. Fue lanzado el 11 de Febrero del 2022, a traves de Death Row Records, convirtienolo en su tercer album lanzado con esta disquera luego de un lapso de 26 años. Contiene apariciones de artistas como Nas, Nate Dogg, The Game, DaBaby y Wiz Khalifa.</p>
+          <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/album/4KzJG9VVC0zxlZrRqJTCvE?utm_source=generator" width="300" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
     </div>
     <footer>
         <p>Copyright © 2022 Franco Rodriguez. All rights reserved.</p>

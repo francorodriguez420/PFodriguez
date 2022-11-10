@@ -4,40 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biografia</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <title>Biografía</title>
     <link rel="shortcut icon" href="../assets/favicon.png">
-    <link rel="stylesheet" href="../assets/styles.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-    <nav>
+    <nav class="navbar navbar-light navbar-1 green">
         <a href="../index.html"><img src="../assets/logosnoopng.png" alt="Snoop Dogg Logo Negro" class="home2"/></a>
         <a href="../index.html"><img src="../assets/logosnoopbl.png" alt="Snoop Dogg Logo Blanco" class="home"/></a>
-            <ul class="menu__navegacion">
-                <li><a href="contacto.html">CONTACTO</a></li>
-                <li><a href="galeria.html">GALERIA</a></li>
-                <li><a href="discos.html">DISCOS</a></li>
-                <li><a href="biografia.html" class="active">BIOGRAFIA</a></li>
-            </ul>
-    </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+          aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+    
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="biografia.html">Biografía <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="discos.html">Discos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
     <h1 class="title">BIOGRAFIA</h1>
-    <Section>
+    <div>
         <article class="article__biografia">
             <img src="../assets/bio/snoop-infancia.jpg" alt="Snoop Infancia" class="fotos__bio">
-            <p class="parrafo__bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eligendi. Voluptatum, impedit ipsum consequuntur explicabo unde saepe vero voluptatibus ducimus sit ut dolorem rem, tempora dolorum doloribus quia, laboriosam quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi doloribus quo blanditiis nemo, eius deserunt esse dicta dignissimos a sint distinctio possimus? Tempore commodi, impedit voluptate fugiat vitae ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci a repudiandae sapiente ipsa ad libero ratione, dolorem labore, facere beatae culpa? Mollitia tempora obcaecati doloremque eos facere perspiciatis aliquam</p>
+            <p class="parrafo__bio">Calvin Cordozar Broadus nacio en Long Beach, California el 20 de octubre de 1971, conocido artísticamente como Snoop Dogg, es un rapero, empresario, productor y actor estadounidense. Fue miembro de la banda Crips cuando estudiaba en el instituto. Algún tiempo después de su graduación, fue arrestado por posesión de cocaína. Su carrera musical comenzó en 1992 después de ser puesto en libertad, cuando fue descubierto por Dr. Dre.</p>
         </article>
         <article class="article__biografia__reverse">
-            <img src="../assets/bio/snoop-studio.jpg" alt="Snoop Studio" class="fotos__bio">
-            <p class="parrafo__bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eligendi. Voluptatum, impedit ipsum consequuntur explicabo unde saepe vero voluptatibus ducimus sit ut dolorem rem, tempora dolorum doloribus quia, laboriosam quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi doloribus quo blanditiis nemo, eius deserunt esse dicta dignissimos a sint distinctio possimus? Tempore commodi, impedit voluptate fugiat vitae ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci a repudiandae sapiente ipsa ad libero ratione, dolorem labore, facere beatae culpa? Mollitia tempora obcaecati doloremque eos facere perspiciatis aliquam?</p>
+            <img src="../assets/bio/snoop-y-dre.jpg" alt="Snoop y Dre" class="fotos__bio">
+            <p class="parrafo__bio">Primero en el tema principal del largometraje Deep Cover, y después con criss monstar en el álbum debut en solitario de Dr. Dre, The Chronic, junto con otros miembros de su antiguo grupo, Tha Dogg Pound. La contribución de Snoop en The Chronic fue considerable; su presencia en el disco es notable y preparaba el terreno para su lanzamiento en solitario.</p>
         </article>
         <article class="article__biografia">
-            <img src="../assets/bio/snoop-y-dre.jpg" alt="Snoop y Dre" class="fotos__bio">
-            <p class="parrafo__bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eligendi. Voluptatum, impedit ipsum consequuntur explicabo unde saepe vero voluptatibus ducimus sit ut dolorem rem, tempora dolorum doloribus quia, laboriosam quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi doloribus quo blanditiis nemo, eius deserunt esse dicta dignissimos a sint distinctio possimus? Tempore commodi, impedit voluptate fugiat vitae ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci a repudiandae sapiente ipsa ad libero ratione, dolorem labore, facere beatae culpa? Mollitia tempora obcaecati doloremque eos facere perspiciatis aliquam?</p>
+            <img src="../assets/bio/snoop-studio.jpg" alt="Snoop Studio" class="fotos__bio">
+            <p class="parrafo__bio">Su album debut, Doggystyle, fue lanzado finalmente en noviembre de 1993 por Death Row Records, y se convirtió en el primer álbum de la West Coast en debutar en primer puesto en las listas. En Doggystyle, al igual que en The Chronic, colaboraron una multitud de raperos afiliados a Death Row como Daz Dillinger, Kurupt, Nate Dogg y Warren G, entre otros. Este álbum está considerado por la mayoría de los admiradores de Snoop como el mejor de su discografía.</p>
         </article>
         <article class="article__biografia__reverse">
             <img src="../assets/bio/snoop-mayor.jpg" alt="Snoop Mayor" class="fotos__bio">
-            <p class="parrafo__bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, eligendi. Voluptatum, impedit ipsum consequuntur explicabo unde saepe vero voluptatibus ducimus sit ut dolorem rem, tempora dolorum doloribus quia, laboriosam quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium modi doloribus quo blanditiis nemo, eius deserunt esse dicta dignissimos a sint distinctio possimus? Tempore commodi, impedit voluptate fugiat vitae ipsam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non adipisci a repudiandae sapiente ipsa ad libero ratione, dolorem labore, facere beatae culpa? Mollitia tempora obcaecati doloremque eos facere perspiciatis aliquam?</p>
+            <p class="parrafo__bio">Snoop volvió a sus inicios en el 2017 con el álbum Neva Left (Nunca me fui) en el cual volvemos a escuchar los sonidos clásicos del Snoop Dogg de los primeros años. El rapero ha incursionado en otros ámbitos, además de su participación en la lucha libre, Snoop Dogg tiene su web Merry Jane, un portal para los amantes de la marihuana. De esa manera él aborda el tema como un estilo de vida. También creó un libro de cocina bastante peculiar con recetas sencillas para toda ocasión. El otro proyecto más reciente fue su liga de juegos electrónicos con la que se introdujo al mundo de los videojuegos, otra de sus pasiones.</p>
         </article>
-    </Section>
+    </div>
     <footer>
         <p>Copyright © 2022 Franco Rodriguez. All rights reserved.</p>
     </footer>
