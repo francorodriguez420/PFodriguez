@@ -5,6 +5,10 @@
 body {
     color: white;
     background-color: #000000;
+    opacity: 1;
+    background-image:  radial-gradient(#006b15 0.75px, transparent 0.75px), radial-gradient(#006b15 0.75px, #000000 0.75px);
+    background-size: 30px 30px;
+    background-position: 0 0,15px 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     min-height: 100vh;
@@ -13,26 +17,26 @@ body {
 }
 /* Styles Menú de Navegación */
 .navbar-1 {
-    background-color: rgb(1, 92, 13);
+    background-color: #015c0d;
     z-index: 999;
 }
 .nav-link {
     color: white;
 }
 .home2 {
-    top: 10px;
-    left: 50px;
+    top: 15px;
+    left: 40px;
     max-height: 40px;
     max-width: 100px;
-    position: fixed;
+    position: absolute;
 }
 .home {
-    top: 10px;
-    left: 50px;
+    top: 15px;
+    left: 40px;
     max-height: 40px;
     max-width: 100px;
-    position: fixed;
     transition: opacity 0.2s;
+    position: absolute;
 }
 .home:hover {
     opacity: 0;
@@ -69,7 +73,8 @@ body {
 .center {
     text-align: center;
     margin: auto;
-    width: 50%;
+    width: 90%;
+    max-width: 500px;
 }
 .contacto {
     align-items: center;
@@ -84,7 +89,8 @@ textarea, input[type=email] {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
-    resize: vertical
+    resize: vertical;
+    font-size: 1rem;
 }
 input[type=submit] {
     background-color: #0059ff;
@@ -93,19 +99,18 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: 0.2s;
 }
 input[type=submit]:hover {
     background-color: #00e1ff;
 }
-.container {
-    border-radius: 5px;
-    padding: 20px;
-}
-.w-30 {
-    width: 30%;
-}
 #subject {
     height: 200px;
+}
+form{
+    margin: auto;
+    width: 90vh;
+    max-width: 500px;
 }
 /* Fin Styles Formulario Contacto */
 /* Styles Home */
@@ -138,11 +143,6 @@ iframe {
         'video3'
     }
 }
-@media only screen and (max-width: 800px){
-    #carouselExampleControls {
-        padding-top: 55px;
-    }
-}
 .video1 {
     grid-area: video1;
 }
@@ -153,14 +153,13 @@ iframe {
     grid-area: video3;
 
 }
-#carouselExampleControls {
-    margin-top: 45px;
-}
+
 /* Fin Styles Home */
 /* Styles Titulos */
 h1 {
     text-align: center;
     padding-top: 40px;
+    font-size: 2rem;
 }
 .titulo__seccion {
     letter-spacing: 15px;
@@ -185,15 +184,60 @@ h1 {
 }
 .fotos__bio {
     height: 250px;
-    padding-left: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
 }
 .parrafo__bio {
     padding: 40px;
-    font-size: 20px;
-
+    font-size: 16px;
+}
+@media only screen and (max-width: 1100px) {
+    .fotos__bio {
+        height: 200px;
+        margin-left: 40px;
+        border-radius: 10px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .article__biografia {
+        display: grid;
+        grid-template-columns: 1;
+        align-items: center;
+        margin: 50px;
+    }
+    .article__biografia__reverse {
+        display: grid;
+        grid-template-columns: 1;
+        align-items: center;
+        margin: 50px;
+    }
+    .fotos__bio {
+        margin-left: 16%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .fotos__bio {
+        height: 180px;
+        margin-left: 10%;
+    }
+    .parrafo__bio {
+        padding: 40px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 400px){
+    .fotos__bio {
+        height: 120px;
+        margin-left: 10%;
+    }
 }
 /* Fin Styles Biografia */
 /* Styles Discos */
+.discos {
+    display: grid;
+    grid-template-rows: repeat(4, 300px);
+}
+
 .article__discos {
     display: flex;
     align-items: center;
@@ -201,48 +245,87 @@ h1 {
 }
 .album__cover {
     height: 200px;
-    padding-left: 40px;
+    margin-left: 40px;
+    border-radius: 10px;
 }
 .parrafo__album {
     padding: 50px;
     font-size: 16px;
     width: 60%;
 }
-.play__disco {
-    display: inline-block;
-    border-radius: 4px;
-    background-color: #004EFF;
-    border: none;
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin: 5px;
-  }
-.play__disco span {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-  }
-.play__disco span:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-.play__disco:hover span {
-    padding-right: 25px;
-  }
-.play__disco:hover span:after {
-    opacity: 1;
-    right: 0;
-  }
+@media only screen and (max-width: 1000px) {
+    .parrafo__album {
+        padding: 50px;
+        font-size: 12px;
+        width: 60%;
+    }
+    .album__cover {
+        height: 150px;
+        margin-left: 40px;
+        border-radius: 10px;
+    }
+    .spotify {
+        width: 300px;
+        height: 79px
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .discos {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: auto;
+        align-items: center;
+        align-content: center;
+    }
+    .article__discos {
+        display: grid;
+        grid-template-columns: 1;
+        margin: 50px;
+        align-items: center;
+        align-content: center;
+    }
+    .parrafo__album {
+        margin-left: 7%;
+        padding: 50px;
+        font-size: 12px;
+        width: 90%;
+    }
+    .album__cover {
+        margin-left: 38%;
+    }
+    .spotify {
+        margin-left: 28%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .discos {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: auto;
+        align-items: center;
+        align-content: center;
+    }
+    .article__discos {
+        display: grid;
+        grid-template-columns: 1;
+        margin: 50px;
+        align-items: center;
+        align-content: center;
+    }
+    .parrafo__album {
+        margin-left: 5%;
+        padding: 50px;
+        font-size: 12px;
+        width: 90%;
+    }
+    .album__cover {
+        margin-left: 30%;
+    }
+    .spotify {
+        margin-left: 12%;
+    }
+}
 /* Fin Styles Discos */
 /* Styles Galeria */
 .principal__galeria {
@@ -261,7 +344,6 @@ h1 {
         'foto7'
         'foto8';
     grid-template-columns: repeat(1, auto);
-    align-content: stretch;
     gap: 10px;
     padding: 0.5vw;
     margin-top: 5vh;
@@ -342,7 +424,7 @@ footer p {
     footer p {
         font-size: 12px;
     }
-    h1 {
-        font-size: medium;
+    .titulo__seccion {
+        font-size: large;
     }
 }
