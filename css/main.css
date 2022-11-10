@@ -1,0 +1,349 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  color: white;
+  background-color: #000000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 60px; }
+
+/* Styles Menú de Navegación */
+nav {
+  background-color: #015c0d;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 45px;
+  overflow: hidden;
+  z-index: 999; }
+
+ul li {
+  list-style: none;
+  float: right; }
+
+li a {
+  list-style: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  transition: color 0.2s; }
+
+li a:hover {
+  list-style: none;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none; }
+
+.active {
+  background-color: #ffffff;
+  color: black; }
+
+.home2 {
+  top: 10px;
+  left: 50px;
+  max-height: 40px;
+  max-width: 100px;
+  position: fixed; }
+
+.home {
+  top: 10px;
+  left: 50px;
+  max-height: 40px;
+  max-width: 100px;
+  position: fixed;
+  transition: opacity 0.2s; }
+
+.home:hover {
+  opacity: 0; }
+
+@media only screen and (max-width: 800px) {
+  .menu__navegacion {
+    text-align: center;
+    font-size: 12px;
+    justify-content: center; }
+  nav {
+    height: 100px; }
+  ul li {
+    text-align: center;
+    display: inline-block;
+    float: none; }
+  li a {
+    padding-top: 60px; } }
+
+@media only screen and (max-width: 500px) {
+  .menu__navegacion {
+    font-size: 9px; }
+  li a {
+    padding-left: 8px; } }
+
+/* Fin Styles Menú de Navegación */
+/* Styles Formulario Contacto */
+.principal {
+  padding-top: 20px;
+  margin-top: 30px; }
+
+.center {
+  text-align: center;
+  margin: auto;
+  width: 50%; }
+
+.contacto {
+  align-items: center; }
+
+input[type=text],
+select,
+textarea, input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical; }
+
+input[type=submit] {
+  background-color: #0059ff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+input[type=submit]:hover {
+  background-color: #00e1ff; }
+
+.container {
+  border-radius: 5px;
+  padding: 20px; }
+
+.w-30 {
+  width: 30%; }
+
+#subject {
+  height: 200px; }
+
+/* Fin Styles Formulario Contacto */
+/* Styles Home */
+.home__foto {
+  padding-top: 45px;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  min-height: 100%; }
+
+iframe {
+  width: 480px;
+  height: 270px; }
+
+.videos__home {
+  display: flex;
+  justify-content: space-around; }
+
+@media only screen and (max-width: 1000px) {
+  iframe {
+    width: 352px;
+    height: 198px; }
+  .videos__home {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-areas: 'video1' 'video2' 'video3'; } }
+
+@media only screen and (max-width: 800px) {
+  #carouselExampleControls {
+    padding-top: 55px; } }
+
+.video1 {
+  grid-area: video1; }
+
+.video2 {
+  grid-area: video2; }
+
+.video3 {
+  grid-area: video3; }
+
+#carouselExampleControls {
+  margin-top: 45px; }
+
+/* Fin Styles Home */
+/* Styles Titulos */
+h1 {
+  text-align: center;
+  padding-top: 40px; }
+
+.titulo__seccion {
+  letter-spacing: 15px;
+  margin-bottom: 50px; }
+
+.title {
+  margin-top: 30px;
+  margin-bottom: 50px; }
+
+/* Fin Styles Titulos */
+/* Styles Biografia */
+.article__biografia {
+  display: flex;
+  align-items: center;
+  margin: 50px; }
+
+.article__biografia__reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 50px; }
+
+.fotos__bio {
+  height: 250px;
+  padding-left: 40px; }
+
+.parrafo__bio {
+  padding: 40px;
+  font-size: 20px; }
+
+/* Fin Styles Biografia */
+/* Styles Discos */
+.article__discos {
+  display: flex;
+  align-items: center;
+  margin: 50px; }
+
+.album__cover {
+  height: 200px;
+  padding-left: 40px; }
+
+.parrafo__album {
+  padding: 50px;
+  font-size: 16px;
+  width: 60%; }
+
+.play__disco {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #004EFF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px; }
+
+.play__disco span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s; }
+
+.play__disco span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s; }
+
+.play__disco:hover span {
+  padding-right: 25px; }
+
+.play__disco:hover span:after {
+  opacity: 1;
+  right: 0; }
+
+/* Fin Styles Discos */
+/* Styles Galeria */
+.principal__galeria {
+  display: flex;
+  justify-content: center; }
+
+.galeria {
+  display: grid;
+  grid-template-areas: 'foto1' 'foto2' 'foto3' 'foto4' 'foto5' 'foto6' 'foto7' 'foto8';
+  grid-template-columns: repeat(1, auto);
+  align-content: stretch;
+  gap: 10px;
+  padding: 0.5vw;
+  margin-top: 5vh;
+  align-content: stretch; }
+
+@media only screen and (min-width: 800px) {
+  .galeria {
+    display: grid;
+    grid-template-areas: 'foto1 foto1 foto2 foto2' 'foto3 foto3 foto4 foto4' 'foto5 foto6 foto7 foto8' 'foto5 foto6 foto7 foto8';
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+    object-fit: contain;
+    align-content: stretch; } }
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.2s; }
+
+.galeria img:hover {
+  opacity: 70%;
+  overflow: hidden; }
+
+.foto1 {
+  grid-area: foto1;
+  max-height: 400px; }
+
+.foto2 {
+  grid-area: foto2;
+  max-height: 400px; }
+
+.foto3 {
+  grid-area: foto3;
+  max-height: 400px; }
+
+.foto4 {
+  grid-area: foto4;
+  max-height: 400px; }
+
+.foto5 {
+  grid-area: foto5;
+  max-height: 400px; }
+
+.foto6 {
+  grid-area: foto6;
+  max-height: 400px; }
+
+.foto7 {
+  grid-area: foto7;
+  max-height: 400px; }
+
+.foto8 {
+  grid-area: foto8;
+  max-height: 400px; }
+
+/* Fin Styles Galeria */
+/* Styles Footer */
+footer {
+  background-color: #031500;
+  width: 100%;
+  text-align: center;
+  height: 45px;
+  margin-top: auto;
+  bottom: 0;
+  position: absolute; }
+
+footer p {
+  padding-top: 12px; }
+
+@media only screen and (max-width: 800px) {
+  footer p {
+    font-size: 12px; }
+  h1 {
+    font-size: medium; } }
