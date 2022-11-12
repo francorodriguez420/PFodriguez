@@ -12,6 +12,7 @@
     height: 200px;
     margin-left: 40px;
     border-radius: 10px;
+    transition: opacity 0.2s;
     &:hover {
         opacity: $opacity;
     }

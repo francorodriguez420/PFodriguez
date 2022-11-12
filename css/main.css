@@ -182,7 +182,8 @@ iframe {
 .fotos__bio {
   height: 250px;
   margin-left: 40px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transition: opacity 0.2s; }
   .fotos__bio:hover {
     opacity: 85%; }
 
@@ -235,7 +236,8 @@ iframe {
 .album__cover {
   height: 200px;
   margin-left: 40px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  transition: opacity 0.2s; }
   .album__cover:hover {
     opacity: 85%; }
 
