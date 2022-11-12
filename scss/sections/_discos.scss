@@ -1,0 +1,93 @@
+.discos {
+    display: grid;
+    grid-template-rows: repeat(4, 300px);
+}
+
+.article__discos {
+    display: flex;
+    align-items: center;
+    margin: 50px;
+}
+.album__cover {
+    height: 200px;
+    margin-left: 40px;
+    border-radius: 10px;
+}
+.parrafo__album {
+    padding: 50px;
+    font-size: 16px;
+    width: 60%;
+}
+@media only screen and (max-width: 1000px) {
+    .parrafo__album {
+        padding: 50px;
+        font-size: 12px;
+        width: 60%;
+    }
+    .album__cover {
+        height: 150px;
+        margin-left: 40px;
+        border-radius: 10px;
+    }
+    .spotify {
+        width: 300px;
+        height: 79px
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .discos {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: auto;
+        align-items: center;
+        align-content: center;
+    }
+    .article__discos {
+        display: grid;
+        grid-template-columns: 1;
+        margin: 50px;
+        align-items: center;
+        align-content: center;
+    }
+    .parrafo__album {
+        margin-left: 7%;
+        padding: 50px;
+        font-size: 12px;
+        width: 90%;
+    }
+    .album__cover {
+        margin-left: 38%;
+    }
+    .spotify {
+        margin-left: 28%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .discos {
+        display: grid;
+        grid-template-columns: 1;
+        grid-template-rows: auto;
+        align-items: center;
+        align-content: center;
+    }
+    .article__discos {
+        display: grid;
+        grid-template-columns: 1;
+        margin: 50px;
+        align-items: center;
+        align-content: center;
+    }
+    .parrafo__album {
+        margin-left: 5%;
+        padding: 50px;
+        font-size: 12px;
+        width: 90%;
+    }
+    .album__cover {
+        margin-left: 30%;
+    }
+    .spotify {
+        margin-left: 12%;
+    }
+}

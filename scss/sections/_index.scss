@@ -1,0 +1,39 @@
+.home__foto {
+    padding-top: 45px;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+iframe {
+    width: 480px;
+    height: 270px;
+}
+.videos__home {
+    display: flex;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 1000px) {
+    iframe {
+        width: 352px;
+        height: 198px;
+    }
+    .videos__home {
+        display: grid;
+        grid-row-gap: 20px;
+        grid-template-areas:
+        'video1'
+        'video2'
+        'video3'
+    }
+}
+.video1 {
+    grid-area: video1;
+}
+.video2 {
+    grid-area: video2;
+}
+.video3 {
+    grid-area: video3;
+
+}
