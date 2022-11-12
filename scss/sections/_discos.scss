@@ -12,6 +12,9 @@
     height: 200px;
     margin-left: 40px;
     border-radius: 10px;
+    &:hover {
+        opacity: $opacity;
+    }
 }
 .parrafo__album {
     padding: 50px;

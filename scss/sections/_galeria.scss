@@ -41,7 +41,7 @@
     object-fit: contain;
     transition: opacity 0.2s;
     &:hover {
-        opacity: 70%;
+        opacity: $opacity;
         overflow: hidden;
     }
 }

@@ -13,6 +13,9 @@
     height: 250px;
     margin-left: 40px;
     border-radius: 10px;
+    &:hover {
+        opacity: $opacity;
+    }
 }
 .parrafo__bio {
     padding: 40px;
