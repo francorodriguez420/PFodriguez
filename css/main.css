@@ -157,7 +157,9 @@ iframe {
   .videos__home {
     display: grid;
     grid-row-gap: 20px;
-    grid-template-areas: 'video1' 'video2' 'video3'; } }
+    grid-template-areas: 'video1'
+ 'video2'
+ 'video3'; } }
 
 .video1 {
   grid-area: video1; }
@@ -311,7 +313,14 @@ iframe {
 
 .galeria {
   display: grid;
-  grid-template-areas: 'foto1' 'foto2' 'foto3' 'foto4' 'foto5' 'foto6' 'foto7' 'foto8';
+  grid-template-areas: 'foto1'
+ 'foto2'
+ 'foto3'
+ 'foto4'
+ 'foto5'
+ 'foto6'
+ 'foto7'
+ 'foto8';
   grid-template-columns: repeat(1, auto);
   gap: 10px;
   padding: 0.5vw;
@@ -321,7 +330,10 @@ iframe {
 @media only screen and (min-width: 800px) {
   .galeria {
     display: grid;
-    grid-template-areas: 'foto1 foto1 foto2 foto2' 'foto3 foto3 foto4 foto4' 'foto5 foto6 foto7 foto8' 'foto5 foto6 foto7 foto8';
+    grid-template-areas: 'foto1 foto1 foto2 foto2'
+ 'foto3 foto3 foto4 foto4'
+ 'foto5 foto6 foto7 foto8'
+ 'foto5 foto6 foto7 foto8';
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 20px;
